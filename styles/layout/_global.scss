@@ -1,0 +1,25 @@
+.wrapper{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.explore-photo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2.5em;
+    .img-grid a {
+        height: auto;
+        display: block;
+        overflow: hidden;
+        margin:auto;
+    }
+    .img-grid a img {
+        transition: transform 0.6s ease;
+    }
+    .img-grid a img:hover {
+        transform: scale(1.05);
+    }
+    .img-grid a img {
+        object-fit: cover;
+    }
+}
