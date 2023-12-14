@@ -33,6 +33,10 @@
     padding-top: 20px;
 }
 
+section{
+    margin-bottom: 100px;
+}
+
 .sec-approche{
     background-color:#FAFAFA ;
     padding: 80px 0;
@@ -78,6 +82,9 @@
     justify-content: center;
 }
 
+
+////fin du boutton
+
 .our-wine {
     display: flex;
     flex-direction: row;
@@ -94,4 +101,85 @@
             line-height: 1.5;
         }
     }
+}
+
+.grap-vine {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-top: 20px;
+    .two-min {
+        text-transform: uppercase;
+        color: #96958a;
+        font-weight: 600;
+        font-size: 0.9em;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 2px;
+            height: 15px;
+            background-color: #96958a;
+            translate: 0 2px;
+            margin: 0 10px;
+        }
+    }
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    a {
+        color: #000;
+    }
+    p {
+        font-family: playfair;
+        line-height: 1.5;
+    }
+    .btn-read{
+        text-transform: uppercase;
+        color: #96958a;
+        font-weight: 600;
+        font-size: 0.9em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.sec-grap-vine{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+    .grape__btn{
+        width: 420px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: $bgcolor;
+        font-size: 0.7em;
+        letter-spacing: 0.2em;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+
+
+// ****************PAGE SIGNLE BOTTLE ****************
+
+.signle-bottle{
+    display: grid;
+    // grid-template-areas:
+    // '. . . . '
+    // 'myArea myArea . . '
+    // 'myArea myArea . . '
+    // '. . . . ';
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bottle-big{
+    // grid-area: myArea;
+    grid-column: span 2;
+    grid-row: 2 / span 2;
 }
